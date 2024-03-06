@@ -1,0 +1,76 @@
+:root{
+    --color1: #2e3a40;
+    --color2: #7b7b78;
+    --color3: #835e3c; 
+    --color4: #afaeaa;
+}
+body{
+    font-family: "Poppins", sans-serif;
+}
+.navbar-brand, .nav-link, .bi-person-fill {
+    color: var(--color3);
+}
+.navbar-brand:hover, .nav-link:hover, .bi-person-fill:hover{
+    color: var(--color1)
+}
+.navbarScroll{
+    background-color: #7b7b7877;
+    transition: 1s;
+}
+.row-header{
+    height: 750px;
+    width: 100%;
+    margin-top: 50px;
+    background: url(./Img_header.png);
+    background-size: cover;
+    background-position: center;
+}
+.h1-header {
+    margin-top: 250px;
+}
+.h1-header, .h4-header{
+    color: var(--color1);
+}
+.h1-header:hover, .h4-header:hover{
+    color: var(--color2);
+}
+.row-main, .h3-main, .h4-main{
+    color: var(--color1);
+}
+.row-main:hover, .h3-main:hover, .h4-main:hover{
+    color: var(--color3)
+}
+.btn-main{
+    margin: 30px;
+    background-color: var(--color1);
+}
+.btn-main:hover{
+    background-color: var(--color3);
+}
+.footerp{
+    min-height: 220px;
+    padding-top: 30px;
+    background-color: #7b7b7877;
+    color:var(--color1);
+}
+
+
+
+
+/* Media Query */
+@media screen and (max-width: 670px){
+    .link-nav{
+        margin-left: auto 50px; 
+        text-align: end;
+    }
+    .navbar-brand, .nav-link, .bi-person-fill {
+        color: var(--color3);
+    }
+    .navbar-brand:hover, .nav-link:hover, .bi-person-fill:hover{
+        color: var(--color1)
+    }
+    .h1-header:hover, .h4-header:hover{
+        color: var(--color2);
+    }    
+  
+}
