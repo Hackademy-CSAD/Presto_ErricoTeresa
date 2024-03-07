@@ -6,26 +6,29 @@
 }
 body{
     font-family: "Poppins", sans-serif;
+    /* background-color: #afaeaa8e; */
 }
-.navbar-brand, .nav-link, .bi-person-fill {
+.navbar-brand, .nav-link, .bi-person-fill, .bi-cart-fill {
     color: var(--color3);
 }
-.navbar-brand:hover, .nav-link:hover, .bi-person-fill:hover{
+.navbar-brand:hover, .nav-link:hover, .bi-person-fill:hover, .bi-cart-fill:hover{
     color: var(--color1)
 }
 .navbarScroll{
     background-color: #7b7b7877;
     transition: 1s;
 }
+.i-navbar{
+    font-size: 30px;
+}
 .row-header{
-    height: 750px;
-    width: 100%;
-    margin-top: 50px;
-    background: url(./Img_header.png);
+    height: 900px;
+    background: url(./Media_Presto/Img_header.png);
     background-size: cover;
     background-position: center;
 }
 .h1-header {
+    font-size: 50px;
     margin-top: 250px;
 }
 .h1-header, .h4-header{
@@ -33,6 +36,14 @@ body{
 }
 .h1-header:hover, .h4-header:hover{
     color: var(--color2);
+}
+.button-section {
+    background-color: var(--color1);
+    border: solid var(--color1);
+}
+.button-section:hover{
+    background-color: var(--color2);
+    border: solid var(--color2);
 }
 .row-main, .h3-main, .h4-main{
     color: var(--color1);
@@ -43,9 +54,15 @@ body{
 .btn-main{
     margin: 30px;
     background-color: var(--color1);
+    border: solid var(--color1);
 }
 .btn-main:hover{
-    background-color: var(--color3);
+    background-color: var(--color2);
+    border: solid var(--color2);
+}
+.h5-counter{
+    color: var(--color1);
+    font-size: 25px;
 }
 .footerp{
     min-height: 220px;

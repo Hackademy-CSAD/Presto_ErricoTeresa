@@ -20,23 +20,24 @@
     <!-- inizio navbar -->
     <nav class="navbar navbar-expand-lg fixed-top" id="nav">
       <div class="container-fluid">
-        <a class="navbar-brand fw-bold" href="#">Presto.it</a>
+        <a class="navbar-brand fw-bold fs-3" href="#">Presto.it</a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <i class="bi bi-person-lines-fill display-6"></i>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 link-nav">
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Home</a>
+              <a class="nav-link fw-bold fs-4" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Chi siamo</a>
+              <a class="nav-link fw-bold fs-4" href="#">CHI SIAMO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#">Tutti gli annunci</a>
+              <a class="nav-link fw-bold fs-4" aria-current="page" href="#">TUTTI GLI ANNUNCI</a>
             </li>
           </ul>
-          <i class="bi bi-person-fill d-none d-md-flex display-6"></i>
+          <i class="bi bi-cart-fill d-none d-md-flex i-navbar"></i>
+          <i class="bi bi-person-fill d-none d-md-flex i-navbar"></i>
         </div>
       </div>
     </nav>
@@ -52,47 +53,101 @@
       </div>
     </header>
     
-    <div style = "height:1000px">
+    <!-- <div style = "height:1000px">
       
-    </div>
+    </div> -->
 
 <!-- fine header -->
-<div style="height: 100vh;">
-  
-</div>
+
+<!-- inizio section -->
+<section>
+  <h3 class="text-center pt-4 pb-3 h3-section">Lorem ipsum</h3>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-3 text-center">
+        <button class="rounded-4 fw-normal fs-6 py-4 px-4 button-section text-white"><i class="bi bi-geo-alt-fill display-7"></i><br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur.</button>
+      </div>
+      <div class="col-12 col-md-3 text-center">
+        <button class="rounded-4 fw-normal fs-6 py-4 px-4 button-section text-white"><i class="bi bi-airplane-fill display-7"></i><br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur.</button>
+      </div>
+      <div class="col-12 col-md-3 text-center">
+        <button class="rounded-4 fw-normal fs-6 py-4 px-4 button-section text-white"><i class="bi bi-arrow-90deg-right display-7"></i><br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur.</button>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fine section -->
+
+<!-- inizio carousel -->
+<section>
+  <h3 class="text-center pt-5 pb-3 h3-section">Lorem ipsum</h3>
+  <div class="container-fluid">
+    <div class="row justify-content-center">
+      <div class="col-8 col-md-3">
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./Media_Presto/Carousel_1.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./Media_Presto/Carousel_2.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./Media_Presto/Carousel_3.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./Media_Presto/Carousel_4.png" class="d-block w-100" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 py-5">
+        <p class="text-center pt-5">Lorem ipsum dolor sit amet consectetur.</p>
+        <p class="text-center pt-2">Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur. Lorem ipsum dolor sit amet consectetur.<br>Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur.Lorem ipsum dolor sit amet consectetur. </p>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- fine carousel -->
 
 <!-- inizio main -->
 <main>
-  <h3 class="fw-semibold text-center py-5 h3-main">Lorem ipsum</h3>
+  <h3 class="fw-semibold text-center pt-5 pb-3 h3-main">Lorem ipsum</h3>
   <div class="container-fluid">
     <div class="row justify-content-center pt-3"> 
       <div class="col-12 col-md-3 pt-5 text-center">
         <div>
-          <h5 class="fw-normal">Tutti i prodotti</h3>
-            <p id="numeroUno">1</p>
+          <h5 class="fw-normal h5-counter">Tutti i prodotti</h3>
+            <p class="fs-5" id="numeroUno">1</p>
           </div>
           <div>
-            <h5 class="fw-normal">I nostri clienti</h3>
-              <p id="numeroDue">2</p>
+            <h5 class="fw-normal h5-counter">I nostri clienti</h3>
+              <p class="fs-5" id="numeroDue">2</p>
             </div>
             <div>
-              <h5 class="fw-normal">Paesi correlati</h3>
-                <p id="numeroTre">3</p>
+              <h5 class="fw-normal h5-counter">Paesi correlati</h3>
+                <p class="fs-5" id="numeroTre">3</p>
               </div>
             </div>
             <div class="col-12 col-md-3 d-flex justify-content-center">
-              <img src="./Media Presto.it/Section.png" alt="">
+              <img src="./Media_Presto/Main.png" alt="">
             </div>
             <div class="col-12 d-flex flex-column align-items-center">
-              <button class="btn-main fw-normal rounded-pill">Tutti gli annunci</button>
-              <h4 class="h4-main">Lorem ipsum dolor sit amet consectetur.</h4>
+              <button class="btn-main fw-normal fs-5 rounded-4 py-3 px-3 text-white">Tutti gli annunci</button>
+              <h4 class="h4-main pb-3">Lorem ipsum dolor sit amet consectetur.</h4>
             </div>
           </div>
-        </main>
-        
-        <div style="height:10vh">
-          
         </div>
+      </main>
+        
         <!-- fine main -->
         
         <!-- inizio footer -->
@@ -120,6 +175,7 @@
             </div>
           </div>
         </footer>
+
         <!-- fine footer -->
 
 
