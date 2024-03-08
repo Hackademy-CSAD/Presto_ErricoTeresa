@@ -3,39 +3,55 @@
     --color2: #7b7b78;
     --color3: #835e3c; 
     --color4: #afaeaa;
+    --color5: #22140c;
 }
 body{
     font-family: "Poppins", sans-serif;
-    /* background-color: #afaeaa8e; */
 }
-.navbar-brand, .nav-link, .bi-person-fill, .bi-cart-fill {
+/* navbar */
+.navbar-brand, .nav-link, .bi-person-fill, .bi-cart-fill, .bi-search {
+    color: var(--color5);
+}
+.navbar-brand:hover, .nav-link:hover, .bi-person-fill:hover, .bi-cart-fill:hover, .bi-search:hover {
     color: var(--color3);
 }
-.navbar-brand:hover, .nav-link:hover, .bi-person-fill:hover, .bi-cart-fill:hover{
-    color: var(--color1)
-}
 .navbarScroll{
-    background-color: #7b7b7877;
+    background-color: var(--color4);
     transition: 1s;
 }
 .i-navbar{
     font-size: 30px;
 }
+/* header */
 .row-header{
-    height: 900px;
-    background: url(./Media_Presto/Img_header.png);
+    height: 800px;
+    background: url(./Media_Presto/Img_header.png); 
     background-size: cover;
     background-position: center;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
+}
+h1{
+    animation-name: title; 
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+}
+@keyframes title {
+    0% {
+        opacity: 0;
+    }100%{
+        opacity: 1;
+    }
 }
 .h1-header {
     font-size: 50px;
-    margin-top: 250px;
+    margin-top: 280px;
 }
 .h1-header, .h4-header{
     color: var(--color1);
 }
 .h1-header:hover, .h4-header:hover{
-    color: var(--color2);
+    color: var(--color5);
 }
 .button-section {
     background-color: var(--color1);
@@ -45,34 +61,133 @@ body{
     background-color: var(--color2);
     border: solid var(--color2);
 }
-.row-main, .h3-main, .h4-main{
+.h3-section1, .h3-section2, .h3-main, .h4-main, .h3-section3 {
     color: var(--color1);
 }
-.row-main:hover, .h3-main:hover, .h4-main:hover{
-    color: var(--color3)
+.h3-section1:hover, .h3-section2:hover, .h3-main:hover, .h4-main:hover, .h3-section3:hover{
+    color: var(--color3);
 }
+/* main */
 .btn-main{
-    margin: 30px;
+    margin: 20px;
     background-color: var(--color1);
     border: solid var(--color1);
 }
 .btn-main:hover{
-    background-color: var(--color2);
-    border: solid var(--color2);
+    background-color: var(--color3);
+    border: solid var(--color3);
 }
 .h5-counter{
     color: var(--color1);
     font-size: 25px;
 }
+.h5-counter:hover{
+    color: var(--color3);
+}
+.div0-main{
+    background: url(./Media_Presto/2.4.png);
+    background-size: cover;
+}
+.div-main{
+    background: url(./Media_Presto/2.1.png);
+    background-size: cover;
+}
+.div2-main{
+   background: url(./Media_Presto/2.2.png);
+   background-size: cover;
+   margin-top: 30px;
+}
+.div3-main{
+    background: url(./Media_Presto/Main.png);
+    background-size: cover;
+    margin-left: 30px;
+}
+.div4-main{
+    background: url(./Media_Presto/2.3.png);
+    background-size: cover;
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+/* fine main */
+/* section 2 */
+.row-section{
+    min-height: 1300px;
+}
+.div-1{
+    background: url(./Media_Presto/1.1.png);
+    background-size: cover;
+}
+.div-2{
+    background: url(./Media_Presto/1.2.png);
+    background-size: cover;
+}
+.div-3{
+    margin-left: 10px;
+    background-color: var(--color1);
+}
+.div-3:hover{
+    background-color: var(--color3);
+}
+.div-4{
+    background: url(./Media_Presto/1.5.png);
+    background-size: cover;
+    margin-left: 10px;
+}
+.div-5{
+    background: url(./Media_Presto/1.3.png);
+    background-size: cover;
+}
+.div-6{
+    background: url(./Media_Presto/1.4.png);
+    background-size: cover;
+}
+/* fine section 2 */
+
+/* footer */
 .footerp{
     min-height: 220px;
     padding-top: 30px;
-    background-color: #7b7b7877;
+    background-color: var(--color4);
     color:var(--color1);
+}
+.i-footer{
+    font-size: 30px;
+}
+
+
+/* INIZIO PAGINA: TUTTI GLI ANNUNCI */
+.row-header2{
+    background: url(./Media_Presto/header_2_1.png);
+    height: 800px;
+    background-size: cover;
+    background-position: center;
+    border-bottom-right-radius: 80px;
+    border-bottom-left-radius: 80px;
 }
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* FINE PAGINA: TUTTI GLI ANNUNCI */
 
 /* Media Query */
 @media screen and (max-width: 670px){
@@ -89,5 +204,5 @@ body{
     .h1-header:hover, .h4-header:hover{
         color: var(--color2);
     }    
-  
+    
 }

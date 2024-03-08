@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS BOOTSTRAP -->
+    <title>Bootstrap demo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- GOOGLE FONT -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <!-- ICONE BOOTSTRAP -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- STYLE.CSS -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+
+    <!-- inizio navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="nav">
+      <div class="container-fluid">
+        <a class="navbar-brand fw-bold fs-3" href="#">Presto.it</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="bi bi-person-lines-fill display-6"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mx-auto mb-2 mb-lg-0 link-nav">
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-4" aria-current="page" href="./index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-4" href="#">CHI SIAMO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link fw-bold fs-4" aria-current="page" href="#">TUTTI GLI ANNUNCI</a>
+            </li>
+          </ul>
+          <i class="bi bi-search d-none d-md-flex i-navbar px-2"></i>
+          <i class="bi bi-person-fill d-none d-md-flex i-navbar px-2"></i>
+          <i class="bi bi-cart-fill d-none d-md-flex i-navbar px-2"></i>
+        </div>
+      </div>
+    </nav>
+    <!-- fine navbar -->
+
+    <!-- inizio header -->
+    <header class="container-fluid">
+        <div class="row row-header2">
+            <div class="col-12">
+                <h1 class="fw-bold text-center h1-header pb-5">Tutti gli annunci</h1>
+            </div>
+        </div>
+    </header>
+    <!-- fine header -->
+
+<!-- inizio main -->
+<main>
+    <section class="container">
+        <div class="row text-center mt-5">
+            <div class="col-12">
+                <h2>Lorem ipsum</h2>
+                <button class="btn btn-outline-dark" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Filtri</button>
+            </div>
+        </div>
+        <div class="row" id="containerCard">
+            <!-- CARD -->
+        </div>
+    </section>
+</main>
+
+
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasRightLabel">Offcanvas right</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+    </div>
+    <div class="offcanvas-body">
+        <!-- CATEGORIE -->
+        <div>
+            <h2>Categoria</h2>
+            <div class="form-check" id="containerCategories">
+                <input class="form-check-input" type="radio" name="categoria" id="All" checked>
+                <label class="form-check-label" for="All">Tutte le categorie</label>
+            </div>
+        </div>
+        <!-- PREZZO -->
+        <div>
+            <h2>Prezzo</h2>
+            <label for="customRange1" class="form-label">Example range</label>
+            <input type="range" class="form-range" id="customRange1">
+        </div>
+        <!-- PAROLA -->
+        <div>
+            <h2>Parola</h2>
+            <div class="input-group mb-3">
+                <input type="text" class="form-control" placeholder="Usurname" aria-label="Usurname" aria-describedby="basic-addon1">
+            </div>
+        </div>
+    </div>
+</div>
+<!-- fine main -->
+
+
+<!-- inizio footer -->
+<footer class="footerp">
+    <div class="container-fluid">
+        <div class="row justify-content-center pt-4">
+            <div class="col-12 col-md-3 px-5">
+                <h3 class="fw-lighter pb-2">CONTATTI & FAQ</h3>
+                <p class="text-decoration-underline fw-medium fs-5">Contatti</p>
+                <p class="text-decoration-underline fw-medium fs-5">Lavora con noi</p>
+                <p class="text-decoration-underline fw-medium fs-5">Diventa un rivenditore</p>
+                <p class="text-decoration-underline fw-medium fs-5 pb-3">Assistenza</p>
+                <h3 class="fw-lighter">SEGUICI</h3>
+                <i class="bi bi-instagram pe-2 i-footer"></i>
+                <i class="bi bi-facebook pe-2 i-footer"></i>
+                <i class="bi bi-pinterest pe-2 i-footer"></i>
+                <i class="bi bi-youtube pe-2 i-footer"></i>
+                <i class="bi bi-linkedin pe-2 i-footer"></i>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3 class="fw-lighter">INFORMAZIONI UTILI</h3>
+                <p class="fw-medium fs-5">Chi siamo</p>
+                <p class="fw-medium fs-5">Dove trovarci</p>
+                <p class="fw-medium fs-5">Ambienti</p>
+                <p class="fw-medium fs-5 pb-3">Prodotti</p>
+                <h3 class="fw-lighter">PAGAMENTO SICURO</h3>
+                <i class="bi bi-paypal pe-2 i-footer"></i>
+                <i class="bi bi-credit-card pe-2 i-footer"></i>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3 class="fw-lighter">A PROPOSITO DI</h3>
+                <p class="fw-medium fs-5">Journal</p>
+                <p class="fw-medium fs-5">Advertising</p>
+                <p class="fw-medium fs-5">Realizzazioni</p>
+                <p class="fw-medium fs-5 pb-3">Designers</p>
+                <h3 class="fw-lighter">SPEDIZIONE SICURA</h3>
+                <i class="bi bi-truck i-footer"></i>
+            </div>
+            <div class="col-12 col-md-3">
+                <h3 class="fw-lighter">SOSTENIBILITÀ</h3>
+                <p class="fw-medium fs-5">La nostra promessa di sostenibilità.</p>
+            </div>
+        </div>
+    </footer>
+    
+    <!-- fine footer -->
+    
+    <!-- JS BOOTSTRAP -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- MAIN JS -->
+    <script src="./annunci.main.js"></script>
+</body>
+</html>
