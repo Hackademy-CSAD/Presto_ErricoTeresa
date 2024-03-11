@@ -41,4 +41,3 @@ let osservatore = new IntersectionObserver((entries)=>{
 })
 osservatore.observe(numeroTre)
 
-

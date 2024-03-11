@@ -1,19 +1,21 @@
 <!doctype html>
 <html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- CSS BOOTSTRAP -->
-    <title>Bootstrap demo</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <!-- ICONE BOOTSTRAP -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    <!-- STYLE.CSS -->
-    <link rel="stylesheet" href="./style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- CSS BOOTSTRAP -->
+  <title>Bootstrap demo</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <!-- GOOGLE FONT -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <!-- ICONE BOOTSTRAP -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Link Swiper's CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- STYLE.CSS -->
+  <link rel="stylesheet" href="./style.css">
 </head>
   <body>
 
@@ -27,13 +29,13 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav mx-auto mb-2 mb-lg-0 link-nav">
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-4" aria-current="page" href="#">HOME</a>
+              <a class="nav-link fw-bold fs-5" aria-current="page" href="#">HOME</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-4" href="#">CHI SIAMO</a>
+              <a class="nav-link fw-bold fs-5" href="#">CHI SIAMO</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link fw-bold fs-4" aria-current="page" href="./annunci.html">TUTTI GLI ANNUNCI</a>
+              <a class="nav-link fw-bold fs-5" aria-current="page" href="./annunci.html">TUTTI GLI ANNUNCI</a>
             </li>
           </ul>
           <i class="bi bi-search d-none d-md-flex i-navbar px-2"></i>
@@ -58,19 +60,39 @@
 
 <!-- inizio section -->
 <section>
-  <h3 class="fw-semibold text-center fs-2 pt-4 pb-3 h3-section1">Lorem ipsum</h3>
+  <h3 class="fs-3 fw-light text-start pt-4 pb-3 h3-section1 ps-5">Nuovi prodotti di questa settima</h3>
+  <p class="text-decoration-underline fs-6 fw-normal ps-5">Vedi tutti</p>
   <div class="container-fluid">
-    <div class="row justify-content-center">
-      <div class="col-12 col-md-3 text-center">
-        <button class="rounded-4 fw-normal fs-6 py-3 px-3 button-section text-white"><i class="bi bi-geo-alt-fill display-7"></i><br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur.</button>
-      </div>
-      <div class="col-12 col-md-3 text-center">
-        <button class="rounded-4 fw-normal fs-6 py-3 px-3 button-section text-white"><i class="bi bi-airplane-fill display-7"></i><br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur.</button>
-      </div>
-      <div class="col-12 col-md-3 text-center">
-        <button class="rounded-4 fw-normal fs-6 py-3 px-3 button-section text-white"><i class="bi bi-arrow-90deg-right display-7"></i><br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur. <br>Lorem ipsum dolor sit amet consectetur.</button>
+    <div class="row justify-content-center px-5">
+      <div class="col-12 col-md-10 pb-3">
+        <button class="btn-main fw-normal fs-5 rounded-4 py-1 px-3 text-white mt-3 pb-2">Arredamento</button>
+        <button class="btn-main fw-normal fs-5 rounded-4 py-1 px-3 text-white mt-3 pb-2">Illuminazione</button>
+        <button class="btn-main fw-normal fs-5 rounded-4 py-1 px-3 text-white mt-3 pb-2">Arredamento</button>
+        <button class="btn-main fw-normal fs-5 rounded-4 py-1 px-3 text-white mt-3 pb-2">Tessili</button>
+        <button class="btn-main fw-normal fs-5 rounded-4 py-1 px-3 text-white mt-3 pb-2">Decorazioni</button>
+        <button class="btn-main fw-normal fs-5 rounded-4 py-1 px-3 text-white mt-3 pb-2">Bambini</button>
+        <button class="btn-main fw-normal fs-5 rounded-4 py-1 px-3 text-white mt-3 pb-2">Giardino</button>
+        <button class="btn-main fw-normal fs-5 rounded-4 py-1 px-3 text-white mt-3 pb-2">Idee regalo</button>
       </div>
     </div>
+  </div>
+  <!-- Swiper -->
+  <div class="swiper ps-5">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"><img src="./Media_Presto/1.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/2.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/3.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/4.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/5.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/6.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/7.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/8.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/9.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/10.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+      <div class="swiper-slide"><img src="./Media_Presto/11.png" alt="" style="min-height: 300px; min-width: 300px;"></div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
   </div>
 </section>
 <!-- fine section -->
@@ -121,60 +143,60 @@
         <div class="row vh-100">
           <div class="col-12 div-1" style="min-height: 500px; min-width:500px;">
           </div>
-          <p class="fs-4 fw-light">Sala da pranzo</p>
-          <p class="fs-5 fst-normal">Il brunch è servito</p>
-          <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p>
-          <div class="col-12 div-2" style="min-height: 500px; min-width: 500px;">
+          <!-- <p class="fs-4 fw-light">Sala da pranzo</p>
+            <p class="fs-5 fst-normal">Il brunch è servito</p>
+            <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p> -->
+            <div class="col-12 div-2 mt-5" style="min-height: 500px; min-width: 500px;">
+            </div>
+            <!-- <p class="fs-4 fw-light">Studio</p>
+              <p class="fs-5 fst-normal">Il tuo home office perfetto</p>
+              <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p> -->
+            </div>
           </div>
-          <p class="fs-4 fw-light">Studio</p>
-          <p class="fs-5 fst-normal">Il tuo home office perfetto</p>
-          <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p>
-        </div>
-      </div>
-      <div class="col-12 col-md-3">
-        <div class="row" style="min-height: 1000px;">
-          <div class="col-12 div-3 mb-4" style="min-height: 250px; min-width: 500px;">
-            <p class="fs-4 fw-light text-white pt-3">Nuovo prezzo più basso</p>
-            <p class="fs-3 fst-normal text-white">Scropri i prodotti che ami da oggi ad un prezzo più basso</p>
-            <i class="bi bi-arrow-right-circle display-6 text-white"></i>
-          </div>
-          <div class="col-12 bg-info div-4 mb-4" style="min-height: 620px; min-width: 500px;">
-          </div>
-          <p class="fs-4 fw-light">Conservare e organizzare</p>
-          <p class="fs-5 fst-normal">Get organized!</p>
-          <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p>
-          <div class="col-12 div-3" style="min-height: 200px; min-width: 500px;">
-            <p class="fs-4 fw-light text-white pt-3">Novità</p>
-            <p class="fs-3 fst-normal text-white">Scropri tutte le novità</p>
-            <i class="bi bi-arrow-right-circle display-6 text-white"></i>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-md-3">
-        <div class="row px-4" style="min-height: 1100px;">
-          <div class="col-12 div-5" style="min-height: 500px; min-width: 500px;">
-          </div>
-          <p class="fs-4 fw-light">Soggiorno</p>
-          <p class="fs-5 fst-normal">We love curves!</p>
-          <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p>
-          <div class="col-12 div-6" style="min-height: 500px; min-width: 500px;">
-          </div>
-          <p class="fs-4 fw-light">Idee per la decorazione</p>
-          <p class="fs-5 fst-normal">Deco-update!</p>
-          <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-<!-- fine section 2 -->
+          <div class="col-12 col-md-3">
+            <div class="row" style="min-height: 1000px;">
+              <div class="col-12 div-3 mb-4" style="min-height: 250px; min-width: 500px;">
+                <p class="fs-4 fw-light text-white pt-3">Nuovo prezzo più basso</p>
+                <p class="fs-3 fst-normal text-white">Scropri i prodotti che ami da oggi ad un prezzo più basso</p>
+                <i class="bi bi-arrow-right-circle display-6 text-white"></i>
+              </div>
+              <div class="col-12 bg-info div-4 mb-4" style="min-height: 550px; min-width: 500px;">
+              </div>
+              <!-- <p class="fs-4 fw-light">Conservare e organizzare</p>
+                <p class="fs-5 fst-normal">Get organized!</p>
+                <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p> -->
+                <div class="col-12 div-3" style="min-height: 200px; min-width: 500px;">
+                  <p class="fs-4 fw-light text-white pt-3">Novità</p>
+                  <p class="fs-3 fst-normal text-white">Scropri tutte le novità</p>
+                  <i class="bi bi-arrow-right-circle display-6 text-white"></i>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-md-3">
+              <div class="row px-4" style="min-height: 1050px;">
+                <div class="col-12 div-5 mb-5" style="min-height: 300px; min-width: 500px;">
+                </div>
+                <!-- <p class="fs-4 fw-light">Soggiorno</p>
+                  <p class="fs-5 fst-normal">We love curves!</p>
+                  <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p> -->
+                  <div class="col-12 div-6" style="min-height: 300px; min-width: 500px;">
+                  </div>
+                  <!-- <p class="fs-4 fw-light">Idee per la decorazione</p>
+                    <p class="fs-5 fst-normal">Deco-update!</p>
+                    <p class="text-decoration-underline fs-6 fw-normal">Shop the look</p> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
+          <!-- fine section 2 -->
 
 <!-- inizio main -->
 <main>
   <div class="container-fluid">
     <div class="row justify-content-center pt-3">
-      <h3 class="text-center fw-light h3-main fs-2 pt-5">La soddisfazione del cliente come valore fondante.</h3>
-      <p class="text-center fs-5 fst-normal pt-3">Non semplici arredi, ma vere e proprie esperienze di design che emozionano e lasciano il segno.</p>
+      <h3 class="text-center fw-light h3-main fs-2 pb-4">La soddisfazione del cliente come valore fondante.</h3>
+      <p class="text-center fs-5 fst-normal pb-3">Non semplici arredi, ma vere e proprie esperienze di design che emozionano e lasciano il segno.</p>
       <div class="col-12 col-md-3 pt-5 text-center">
         <div>
           <h5 class="fw-semibold h5-counter">Tutti i prodotti</h3>
@@ -265,11 +287,35 @@
 
         <!-- fine footer -->
 
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper('.swiper', {
+    slidesPerView: 3,
+    direction: getDirection(),
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    on: {
+      resize: function () {
+        swiper.changeDirection(getDirection());
+      },
+    },
+  });
 
-    <!-- JS BOOTSTRAP -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
-    <!-- MAIN JS -->
-    <script src="./main.js"></script>
+  function getDirection() {
+    var windowWidth = window.innerWidth;
+    var direction = window.innerWidth <= 760 ? 'vertical' : 'horizontal';
+
+    return direction;
+  }
+</script>
+<!-- JS BOOTSTRAP -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+<!-- MAIN JS -->
+<script src="./main.js"></script>
 </body>
 </html>
 
