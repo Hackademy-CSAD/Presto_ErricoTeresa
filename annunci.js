@@ -26,7 +26,6 @@ fetch("annunci.json").then((response)=>response.json ()).then((data)=>{
             </div>
             </div>`
             containerCard.appendChild(div)
-            console.log('ciao')
         })
     }
     showCards(data)
@@ -68,5 +67,50 @@ fetch("annunci.json").then((response)=>response.json ()).then((data)=>{
             filterbycategories (data)
         })
     })
-    
+   
+let priceValue = document.querySelector('#priceValue')
+let priceInput = document.querySelector('#priceInput')
+
+function setPriceinput (array){
+    let prices = array.map (annuncio => Number(annuncio.price))
+    prices.sort ((a, b)=> a - b)
+    let maxPrice = prices.pop ()
+    priceInput.max = maxPrice
+    priceInput.value = maxPrice
+    priceValue.innerHTML = `${maxPrice}€`
+}
+
+setPriceinput(data)
+
+function filterByPrice (array){
+    let filtered = array.filter (annuncio => annuncio.price <= Number(priceInput.value))
+    containerCard.innerHTML = ``
+    showCards(filtered)
+}
+
+priceInput.addEventListener('input', ()=>{
+    priceValue.innerHTML = `${priceInput.value}€`
+    filterByPrice(data)
+})
+
+let inputWord = document.querySelector('#inputWord')
+function filterByWord (array){
+    let filtered = array.filter (annuncio => annuncio.name.includes (inputWord.value))
+    containerCard.innerHTML = ``
+//    return filtered
+   showCards(filtered)
+}
+
+inputWord.addEventListener('input', ()=>{
+    filterByWord(data)
+})
+
+function globalFilter(){
+    let filtratiPerCategoria = filterbycategories(data)
+    let filtratiPerPrezzo = filterByPrice(filtratiPerCategoria)
+    let filtratiPerParola = filterByWord(filtratiPerPrezzo)
+    showCards(filtratiPerParola)
+}
+
+
 })
