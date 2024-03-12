@@ -53,18 +53,18 @@ fetch("annunci.json").then((response)=>response.json ()).then((data)=>{
     function filterbycategories (array){
         let btnChecked = Array.from(radioBtn).find (btn=> btn.checked)
         if (btnChecked.id != 'All'){
-            let filtered = array.filter (annuncio => annuncio.category == btnChecked.id)
+            let filtered = array.filter(annuncio => annuncio.category == btnChecked.id)
             containerCard.innerHTML = ``
-            showCards(filtered)
+            return filtered
         }else{
-            showCards(array) 
+            return array
         }
         
     }
     
     radioBtn.forEach (btn=>{
         btn.addEventListener('click', ()=>{
-            filterbycategories (data)
+            globalFilter()
         })
     })
    
@@ -72,7 +72,7 @@ let priceValue = document.querySelector('#priceValue')
 let priceInput = document.querySelector('#priceInput')
 
 function setPriceinput (array){
-    let prices = array.map (annuncio => Number(annuncio.price))
+    let prices = array.map(annuncio => Number(annuncio.price))
     prices.sort ((a, b)=> a - b)
     let maxPrice = prices.pop ()
     priceInput.max = maxPrice
@@ -83,26 +83,25 @@ function setPriceinput (array){
 setPriceinput(data)
 
 function filterByPrice (array){
-    let filtered = array.filter (annuncio => annuncio.price <= Number(priceInput.value))
+    let filtered = array.filter(annuncio => annuncio.price <= Number(priceInput.value))
     containerCard.innerHTML = ``
-    showCards(filtered)
+    return filtered
 }
 
 priceInput.addEventListener('input', ()=>{
     priceValue.innerHTML = `${priceInput.value}€`
-    filterByPrice(data)
+    globalFilter()
 })
 
 let inputWord = document.querySelector('#inputWord')
 function filterByWord (array){
-    let filtered = array.filter (annuncio => annuncio.name.includes (inputWord.value))
+    let filtered = array.filter(annuncio => annuncio.name.includes (inputWord.value))
     containerCard.innerHTML = ``
-//    return filtered
-   showCards(filtered)
+   return filtered
 }
 
 inputWord.addEventListener('input', ()=>{
-    filterByWord(data)
+    globalFilter()
 })
 
 function globalFilter(){
